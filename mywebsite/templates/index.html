@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block heading %}
+    <div class="heading-text text-white">
+    <h1>Welcome to Coffee House</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
+      odio commodi adipisci illo repellendus, corrupti provident, libero
+      pariatur, quibusdam totam delectus error perferendis animi at nam.
+      Ut iusto consequatur inventore.
+    </p>
+    
+      <button class="btn mt-8" onclick="handleClick('menu')">Order Here</button>
+    
+  </div>
+
+  <div class="flex flex-col items-center justify-center">
+    <img
+      src="{% static "/img/produk/benih-kopi2.png" %}"
+      alt=""
+      class="z-0 absolute -rotate-45 blur-sm brightness-75"
+      width="650px"
+    />
+    <img
+      src="{% static "img/produk/CoffeeMoc.png" %}"
+      alt="Coffee"
+      class="heading-image"
+      width="280px"
+    />
+  </div>
+{% endblock heading %}
+
+{% block about %}
+  <div class="">
+    <img src="{% static "img/background/Clock.png" %}" width="780px" alt="" class="-bottom-60 -right-72 absolute contrast-0 opacity-30">
+  </div>
+
+      <div class="about-content bg-gradient-to-tr from-[#181818] to-[#1e2126] ">
+        <div class="image-container">
+          <img
+            src="{% static "img/background/Cafe.png" %}"
+            alt="Coffee"
+            class="about-image"
+            width="480px"
+          />
+        </div>
+        
+        <div class="about-text text-white p-12  font-medium relative">
+          <div class="border-l-2 border-t-2 left-0 top-0 p-10 absolute"></div>
+          <div class="border-r-2 border-b-2 right-0 bottom-0 p-10 absolute"></div>
+          <h1 class="text-5xl mb-8 font-['Courgette',cursive] tracking-wider">About US</h1>
+          <p class="font-light">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
+            odio commodi adipisci illo repellendus, corrupti provident, libero
+            pariatur, quibusdam totam delectus error perferendis animi at nam.
+            Ut iusto consequatur inventore.
+          </p>
+        </div>
+      </div>
+{% endblock about %}
