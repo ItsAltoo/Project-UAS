@@ -10,7 +10,6 @@
 
 /* CSS Template */
 
-
 .btn {
   margin-top: 14px;
   background-color: #31363f;
@@ -76,6 +75,17 @@
   z-index: -1; /* Supaya tidak menutupi konten */
 }
 
+.menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../img/background/paperBg.png") center/cover no-repeat;
+  filter: brightness(0.4);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -126,22 +136,18 @@
   max-width: 600px;
 }
 
-.heading-text p{
+.heading-text p {
   font-weight: 300;
   font-size: 16px;
   font-style: italic;
 }
 
-
-.heading-image{
+.heading-image {
   filter: brightness(0.8);
   z-index: 1;
 }
 
-
-
 /* END Heading */
-
 
 /* Page 2 */
 
@@ -150,7 +156,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
 
 .about-text {
@@ -160,6 +165,5 @@
   align-items: start;
   max-width: 600px;
 }
-
 
 /* END Page 2 */
