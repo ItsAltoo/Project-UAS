@@ -1,5 +1,11 @@
 {
   "devDependencies": {
+    "concurrently": "^9.1.2",
     "daisyui": "^5.0.35"
+  },
+  "scripts": {
+     "dev": "concurrently \"cd mywebsite/ && python manage.py runserver\" \"cd mywebsite && python manage.py tailwind start\""
   }
+
+
 }

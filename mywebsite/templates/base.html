@@ -26,11 +26,25 @@
       {% block about %}{% endblock about %}
     </div>
 
+
     {% comment %} Food {% endcomment %}
-    <div id="menu" class="menu relative h-screen bg-zinc-900 overflow-hidden">
-      
-      {% include "snippets/Card.html" %}
-    </div>  
+    <div id="menu" class="relative h-screen bg-zinc-900 flex items-center justify-center overflow-hidden">
+      <!-- Background image seperti ::before -->
+      <div class="absolute inset-0 bg-[url('/static/img/background/paperBg.png')] bg-cover bg-center filter brightness-[0.3] z-0"></div>
+
+      <span class="absolute -top-[1080px] w-[1500px] h-[1500px] bg-gradient-to-b from-[#181818] to-[#1c1c1c] rounded-b-full z-[1] shadow-lg shadow-gray-600"></span>
+
+
+      <!-- Konten lainnya -->
+      {% block food %}
+      {% endblock food %}
+    </div>
+
+
+
+    {% comment %} Drink {% endcomment %}
+    <div class="h-screen bg-zinc-700"></div>
+
 
     <script src="{% static "js/scripts.js" %}"></script>
   </body>
